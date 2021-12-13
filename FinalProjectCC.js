@@ -12,14 +12,14 @@ var video;
 
 
 function preload (){
-	openscene = loadImage ('data/openscreen.png')
+	openscene = loadImage ('data/openscreen.png');
 	titletext = loadFont ('data/Sabo-Filled.otf')
-	diatext = loadFont ('data/ConnectionIi-2wj8.otf')
-	textbox = loadImage ('data/frame.png')
-	enterbox = loadAnimation ('data/enter_01.png','data/enter_02.png')
-	room1 = loadImage ('data/room.png')
-	char1 = loadImage ('data/ch_002.png')
-	charm = loadAnimation ('data/ch_001.png','data/ch_004.png')
+	diatext = loadFont ('data/ConnectionIi-2wj8.otf');
+	textbox = loadImage ('data/frame-2.png');
+	enterbox = loadAnimation ('data/enter_001.png','data/enter_002.png');
+	room1 = loadImage ('data/room.png');
+	char1 = loadImage ('data/ch_002.png');
+	charm = loadAnimation ('data/ch_001.png','data/ch_004');
 
 }
 
@@ -31,8 +31,8 @@ createCanvas (windowWidth*3/4, windowHeight);
 
 function draw() {
 scene1();
-enterbox.frameDelay = 15;
 animation(enterbox, width*2/5, height*3/4);
+enterbox.frameDelay = 15;
 textFont(diatext);
 stroke(0);
 textSize(20);
@@ -95,6 +95,7 @@ text("look I'll just assume this is a werid dream",width/2, height*3/4+100 );
 	}
 if (millis()>22000 && millis ()<26000){
 		video = createCapture(VIDEO);
+		video.show();
 		 //video.hide();
 	textFont(diatext);
 fill (255);

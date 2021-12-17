@@ -19,7 +19,7 @@ function preload (){
 	enterbox = loadAnimation ('data/enter_001.png','data/enter_002.png');
 	room1 = loadImage ('data/room.png');
 	char1 = loadImage ('data/ch_002.png');
-	charm = loadAnimation ('data/ch_001.png','data/ch_004');
+	charm = loadAnimation ('data/ch_001.png','data/ch_004.png');
 
 }
 

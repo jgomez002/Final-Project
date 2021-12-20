@@ -96,7 +96,7 @@ console.log('hehe that enter button doesnt work');
 function draw() {
 //print(dia1);
 if (millis()>0 && millis()<10000){
-cute.play();
+//good.play();
 scene1();
 
 enterbox.frameDelay = 27;
